@@ -1,0 +1,448 @@
+.navbarBelt{
+    /* background-color: #131921; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.leftNavBelt{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.leftNavBeltLogo{
+    width: 110px;
+    height: 30px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    display: flex;
+    padding: 2px;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid;
+        border-radius: 3px;
+    } 
+}
+
+.scrapifyLogo{
+    height: 140%;
+}
+
+.scrapifyText{
+    margin-left: 4px;
+    font-weight: 700;
+}
+
+.mainNav{
+    padding: 8px;
+    display:flex;
+    gap: 25px;
+}
+
+.home{
+    font-weight: 400;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid;
+        box-shadow: 0px 2px 4px green; 
+    }
+}
+
+.com{
+    font-weight: 100;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid;
+        box-shadow: 0px 2px 4px green; 
+    }
+}
+
+.rightSideNavBarBelt{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.googleLogo{
+    height:100%;
+    padding: 8px;
+}
+
+
+.imagegoogle{
+    height: 130%;
+    width: 180px;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid;
+        box-shadow: 0px 2px 4px green; 
+    }
+}
+
+
+@media (max-width : 1440px){
+    .navbarBelt{
+        /* background-color: #131921; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .leftNavBelt{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .leftNavBeltLogo{
+        width: 110px;
+        height: 30px;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        display: flex;
+        padding: 2px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid;
+            border-radius: 3px;
+        } 
+    }
+    
+    .scrapifyLogo{
+        height: 140%;
+    }
+    
+    .scrapifyText{
+        margin-left: 4px;
+        font-weight: 700;
+    }
+    
+    .mainNav{
+        padding: 8px;
+        display:flex;
+        gap: 25px;
+    }
+    
+    .home{
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .com{
+        font-weight: 100;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .rightSideNavBarBelt{
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        margin-right: 25px;
+    }
+    
+    .googleLogo{
+        height:100%;
+        padding: 8px;
+    }
+    
+    
+    .imagegoogle{
+        height: 130%;
+        width: 180px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+}
+
+@media (max-width : 1024px){
+    .navbarBelt{
+        /* background-color: #131921; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .leftNavBelt{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .leftNavBeltLogo{
+        width: 110px;
+        height: 30px;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        display: flex;
+        padding: 2px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid;
+            border-radius: 3px;
+        } 
+    }
+    
+    .scrapifyLogo{
+        height: 140%;
+    }
+    
+    .scrapifyText{
+        margin-left: 4px;
+        font-weight: 700;
+    }
+    
+    .mainNav{
+        padding: 8px;
+        display:flex;
+        gap: 25px;
+    }
+    
+    .home{
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .com{
+        font-weight: 100;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .rightSideNavBarBelt{
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        margin-right: 25px;
+    }
+    
+    .googleLogo{
+        height:100%;
+        padding: 8px;
+    }
+    
+    
+    .imagegoogle{
+        height: 130%;
+        width: 180px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+}
+
+@media (max-width : 1023px){
+    .navbarBelt{
+        /* background-color: #131921; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .leftNavBelt{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .leftNavBeltLogo{
+        width: 110px;
+        height: 30px;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        display: flex;
+        padding: 2px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid;
+            border-radius: 3px;
+        } 
+    }
+    
+    .scrapifyLogo{
+        height: 140%;
+    }
+    
+    .scrapifyText{
+        margin-left: 4px;
+        font-weight: 700;
+    }
+    
+    .mainNav{
+        padding: 8px;
+        display:flex;
+        gap: 25px;
+    }
+    
+    .home{
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .com{
+        font-weight: 100;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .rightSideNavBarBelt{
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        margin-right: 25px;
+    }
+    
+    .googleLogo{
+        height:100%;
+        padding: 8px;
+    }
+    
+    
+    .imagegoogle{
+        height: 130%;
+        width: 180px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+}
+
+@media (max-width : 767px){
+    .navbarBelt{
+        /* background-color: #131921; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .leftNavBelt{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .leftNavBeltLogo{
+        width: 110px;
+        height: 30px;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        display: flex;
+        padding: 2px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid;
+            border-radius: 3px;
+        } 
+    }
+    
+    .scrapifyLogo{
+        height: 140%;
+    }
+    
+    .scrapifyText{
+        margin-left: 4px;
+        font-weight: 700;
+    }
+    
+    .mainNav{
+        padding: 8px;
+        display:flex;
+        gap: 25px;
+    }
+    
+    .home{
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .com{
+        font-weight: 100;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+    
+    .rightSideNavBarBelt{
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        margin-right: 25px;
+    }
+    
+    .googleLogo{
+        height:100%;
+        padding: 8px;
+    }
+    
+    
+    .imagegoogle{
+        height: 130%;
+        width: 180px;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid;
+            box-shadow: 0px 2px 4px green; 
+        }
+    }
+}
