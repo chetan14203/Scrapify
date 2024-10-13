@@ -34,7 +34,7 @@ const Home = () => {
   const handleFormSubmit = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("https://scrapify-rouge.vercel.app/save-user", {
+      const response = await axios.post("http://localhost:5000/save-user", {
         mobileNumber,
         name,
         address,

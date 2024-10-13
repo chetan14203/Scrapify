@@ -5,5 +5,5 @@ const userController = require('../controllers/userControllers');
 
 
 router.post('/save-user', userController.createUser);
-
+router.get('/',userController.userget);
 module.exports = router;

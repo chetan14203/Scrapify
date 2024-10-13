@@ -8,33 +8,25 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-
-
 app.use('/',userRoutes)
 
-const uri = process.env.MONGODB_URI
+const uri = "mongodb://localhost:27017/myData";
 console.log(uri);
 
 const connectToDatabase = async () => {
     try {
-        
         const options = {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            ssl: true,  
-            tlsAllowInvalidCertificates: false  
-          };
-          await mongoose.connect(uri, options);
-        console.log('Successfully connected to MongoDB Atlas!');
+            useUnifiedTopology: true
+        };
+        await mongoose.connect(uri, options);
+        console.log('Successfully connected to MongoDB!');
     } catch (error) {
         console.error('Database connection error:', error);
     }
 };
 
 connectToDatabase();
-
-
-
 
 app.listen(port,() => {
     console.log(`Server is live at ${port}`)

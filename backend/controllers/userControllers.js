@@ -26,9 +26,15 @@ const createUser = async (req, res) => {
     }
 };
 
+
+const userget = async (req,res) => {
+    try {
+        res.status(201).json("Hello");
+    }catch(err){
+        res.status(404).json(err);
+    }
+}
+
 // Export the createUser function
-module.exports = { createUser };
+module.exports = { createUser,userget };
 
-
-// Export the createUser function properly
-module.exports = { createUser };
