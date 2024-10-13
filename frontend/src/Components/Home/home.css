@@ -279,7 +279,7 @@ cursor: not-allowed;
 
 
 /* Large laptops (1440px and above) */
-@media (max-width: 1440px) {
+@media (max-width: 767px) {
   .homeScreen {
     display: flex;                /* Aligns children horizontally */
     width: 100%;                 /* Full width of the parent */
@@ -559,292 +559,292 @@ cursor: not-allowed;
   }
   
 }
-
-
-@media (max-width: 1024px) {
-  .homeScreen {
-    display: flex;                /* Aligns children horizontally */
-    width: 100%;                 /* Full width of the parent */
-    height: 100vh; 
-    color: white;              /* Full viewport height */
-  }
-  
-  .leftHome {
-    flex: 1;                     /* Take available space */
-    display: flex;               /* Enable flexbox for layout */
-    justify-content: center;     /* Center horizontally */
-    align-items: flex-start;     /* Align items to the top */
-    text-align: center;          /* Center text inside */
-    padding: 20px;               /* Optional padding */
-  }
-  
-  .leftupper {
-    margin-top: 80px;
-    margin-right: 100px;            /* Optional: Add some space from the top */
-  }
-  
-  .leftupper h3 {
-    margin: 0;                   /* Remove default margins */
-    font-size: 3rem;  
-    color: white;           /* Increase font size */
-  }
-  
-  .scrapify {
-    background: linear-gradient(to right, #66bb6a, #388e3c); /* Green gradient */
-    cursor: pointer;
-    -webkit-background-clip: text;   /* For Chrome, Safari (Webkit browsers) */
-    -moz-background-clip: text;      /* For Firefox (older versions) */
-    background-clip: text;           /* Standard background-clip property */
-    -webkit-text-fill-color: transparent; /* Make text transparent to show background */
-  }
-  
-  
-  .rightHome {
-    flex: 1;                     /* Right div will also take available space */  /* Optional background color for the right side */
-    display: flex;               /* Optional: enable flexbox here as well */
-    justify-content: center;     /* Center content */
-    align-items: center;         /* Center content */
-  }
-  
-  .leftupper h2 {
-    margin: 10px 0;              /* Vertical spacing between h2 elements */
-    font-size: 2rem;             /* Set font size for h2 elements */
-    color: white;                /* Change color to white */
-    font-weight: 300;                  /* Change color as needed */
-  }
-  
-  .download {
-    font-style: italic;          /* Italicize the download text */
-    color: #555;                 /* Slightly lighter color for emphasis */
-  }
-  .downloadlink{
-    font-style: italic;
-    cursor: pointer;
-    &:hover{
-        box-shadow: 0 2px 0px 0px green;
-    }
-  }
-  
-  .homeimg {
-    margin-top: 20px;            /* Add space above the image */
-    width: 50%;                 /* Make image responsive */
-    height: 11%;                /* Maintain aspect ratio */
-    border-radius: 8px;         /* Optional: rounded corners */
-  }
-  
-  
-  /* MobileNumberCard.css */
-  
-  .card {
-    background-color: #fff;               /* White background for the card */
-    border: 1px solid #ccc;               /* Light gray border */
-    border-radius: 10px;                  /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(102, 187, 106, 0.5); /* Green shadow effect */
-    padding: 30px;                        /* Increase padding inside the card */
-    width: 400px;                         /* Card width */
-    margin: 20px auto;                    /* Center the card horizontally */
-    text-align: center;                   /* Center text inside */
-  }
-  
-  .card h2 {
-    margin-bottom: 20px;                  /* Space below the title */
-    font-size: 1.7rem;                    /* Font size for the title */
-    color: #333;                          /* Title color */
-  }
-  
-  /* Flexbox container for mobile input and country code */
-  .mobile-input-container {
-    display: flex;                        /* Display the container as flex */
-    align-items: center;                  /* Vertically center the input and code */
-    margin-bottom: 20px;                  /* Space below the input */
-    border: 1px solid #ccc;               /* Light gray border */
-    border-radius: 5px;                   /* Rounded corners */
-    padding: 5px 10px;                    /* Padding inside the input container */
-  }
-  
-  /* Style for the country code */
-  .country-code {
-    font-size: 1rem;                      /* Font size for the country code */
-    color: #555;                          /* Slightly gray color for country code */
-    margin-right: 10px;                   /* Space between country code and input */
-  }
-  
-  /* Style for the input field */
-  .mobile-input {
-    width: 100%;                          /* Full width input */
-    border: none;                         /* Remove input border */
-    font-size: 1rem;                      /* Font size for input text */
-    outline: none;                        /* Remove input outline on focus */
-  }
-  
-  /* Style for the Next button */
-  .next-button {
-    background-color: #66bb6a;            /* Green background */
-    color: white;                         /* White text color */
-    padding: 12px 25px;                   /* Padding for button */
-    border: none;                         /* Remove default border */
-    border-radius: 5px;                   /* Rounded corners */
-    cursor: pointer;                      /* Pointer cursor */
-    font-size: 1.1rem;                    /* Slightly larger text */
-    margin-top: 10px;                     /* Space above button */
-    width: 100%;                          /* Full width */
-  
-    &:hover {
-      background-color: #529556;
-    }
-  }
-  
-  /* Support message styles */
-  .support-message {
-    margin-top: 20px;                     /* Space above the support message */
-    font-size: 0.9rem;                    /* Support message font size */
-    color: #555;                          /* Slightly gray color */
-    text-align: center;                   /* Centered text */
-  }
-  
-  /* Phone number style */
-  .phone-number {
-    color: #66bb6a;                       /* Green color for phone number */
-    text-decoration: none;                /* Remove underline */
-  }
-  
-  .phone-number:hover {
-    text-decoration: underline;           /* Underline on hover */
-  }
-  
-  .input-group {
-  margin-bottom: 15px;
-  }
-  
-  .input-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  }
-  
-  .mobile-input-container {
-  display: flex;
-  align-items: center;
-  }
-  
-  .country-code {
-  margin-right: 5px;
-  }
-  
-  .user-input, .mobile-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  }
-  
-  .next-button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  }
-  
-  .next-button:hover {
-  background-color: #45a049;
-  }
-  
-  .user-details-form {
-    display: flex;                        /* Enable flexbox */
-    flex-direction: column;              /* Stack form groups vertically */
-  }
-  
-  .carddet {
-    background-color: #fff;               /* White background for the card */
-    border: 1px solid #ccc;               /* Light gray border */
-    border-radius: 10px;                  /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(102, 187, 106, 0.5); /* Green shadow effect */
-    padding: 30px;                        /* Increase padding inside the card */
-    width: 400px;                         /* Card width */
-    margin: 20px auto;                    /* Center the card horizontally */
-    text-align: left;   
-    color: #333;                  /* Align text to the left */
-  }
-  
-  .form-group {
-    display: flex;                        /* Flex layout for input and label */
-    flex-direction: row;                 /* Arrange label and input in a row */
-    align-items: center;                 /* Center items vertically */
-    margin-bottom: 15px;    
-    justify-content: flex-start;             /* Space between groups */
-  }
-  
-  .form-group label {
-    font-weight: bold;                   /* Bold label */
-    margin-right: 10px;                  /* Space between label and input */
-    width: 150px;                        /* Fixed width for labels */
-  }
-  
-  /* Input Field Styles */
-  .form-group input {
-    width: 100%;                          /* Full width for input */
-    height: 40px;                        /* Same height for all inputs */
-    padding: 10px;                       /* Padding inside the input */
-    border: 1px solid #ccc;              /* Light gray border */
-    border-radius: 4px;                  /* Rounded corners */
-    box-sizing: border-box;               /* Include padding and border in width */
-    placeholder {                         /* Style for placeholder */
-        color: #888;                      /* Light gray placeholder text */
-    }
-  }
-  
-  .next-button {
-  padding: 10px 15px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  }
-  
-  .next-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-  } 
-  
-  
-  .otp-input-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adds space between the input boxes */
-  }
-  
-  .otp-input {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .help-text {
-    margin-top: 15px;
-    font-size: 0.9em; /* Slightly smaller font */
-    color: #555; /* Darker gray for the text */
-  }
-  
-  .phone-link {
-    color: #007BFF; /* Same color as your links */
-    text-decoration: none; /* No underline */
-  }
-  
-  .phone-link:hover {
-    text-decoration: underline; /* Underline on hover for better visibility */
-  }
-  
-}
-
 
 
 @media (max-width: 1023px) {
+  .homeScreen {
+    display: flex;                /* Aligns children horizontally */
+    width: 100%;                 /* Full width of the parent */
+    height: 100vh; 
+    color: white;              /* Full viewport height */
+  }
+  
+  .leftHome {
+    flex: 1;                     /* Take available space */
+    display: flex;               /* Enable flexbox for layout */
+    justify-content: center;     /* Center horizontally */
+    align-items: flex-start;     /* Align items to the top */
+    text-align: center;          /* Center text inside */
+    padding: 20px;               /* Optional padding */
+  }
+  
+  .leftupper {
+    margin-top: 80px;
+    margin-right: 100px;            /* Optional: Add some space from the top */
+  }
+  
+  .leftupper h3 {
+    margin: 0;                   /* Remove default margins */
+    font-size: 3rem;  
+    color: white;           /* Increase font size */
+  }
+  
+  .scrapify {
+    background: linear-gradient(to right, #66bb6a, #388e3c); /* Green gradient */
+    cursor: pointer;
+    -webkit-background-clip: text;   /* For Chrome, Safari (Webkit browsers) */
+    -moz-background-clip: text;      /* For Firefox (older versions) */
+    background-clip: text;           /* Standard background-clip property */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show background */
+  }
+  
+  
+  .rightHome {
+    flex: 1;                     /* Right div will also take available space */  /* Optional background color for the right side */
+    display: flex;               /* Optional: enable flexbox here as well */
+    justify-content: center;     /* Center content */
+    align-items: center;         /* Center content */
+  }
+  
+  .leftupper h2 {
+    margin: 10px 0;              /* Vertical spacing between h2 elements */
+    font-size: 2rem;             /* Set font size for h2 elements */
+    color: white;                /* Change color to white */
+    font-weight: 300;                  /* Change color as needed */
+  }
+  
+  .download {
+    font-style: italic;          /* Italicize the download text */
+    color: #555;                 /* Slightly lighter color for emphasis */
+  }
+  .downloadlink{
+    font-style: italic;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 2px 0px 0px green;
+    }
+  }
+  
+  .homeimg {
+    margin-top: 20px;            /* Add space above the image */
+    width: 50%;                 /* Make image responsive */
+    height: 11%;                /* Maintain aspect ratio */
+    border-radius: 8px;         /* Optional: rounded corners */
+  }
+  
+  
+  /* MobileNumberCard.css */
+  
+  .card {
+    background-color: #fff;               /* White background for the card */
+    border: 1px solid #ccc;               /* Light gray border */
+    border-radius: 10px;                  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(102, 187, 106, 0.5); /* Green shadow effect */
+    padding: 30px;                        /* Increase padding inside the card */
+    width: 400px;                         /* Card width */
+    margin: 20px auto;                    /* Center the card horizontally */
+    text-align: center;                   /* Center text inside */
+  }
+  
+  .card h2 {
+    margin-bottom: 20px;                  /* Space below the title */
+    font-size: 1.7rem;                    /* Font size for the title */
+    color: #333;                          /* Title color */
+  }
+  
+  /* Flexbox container for mobile input and country code */
+  .mobile-input-container {
+    display: flex;                        /* Display the container as flex */
+    align-items: center;                  /* Vertically center the input and code */
+    margin-bottom: 20px;                  /* Space below the input */
+    border: 1px solid #ccc;               /* Light gray border */
+    border-radius: 5px;                   /* Rounded corners */
+    padding: 5px 10px;                    /* Padding inside the input container */
+  }
+  
+  /* Style for the country code */
+  .country-code {
+    font-size: 1rem;                      /* Font size for the country code */
+    color: #555;                          /* Slightly gray color for country code */
+    margin-right: 10px;                   /* Space between country code and input */
+  }
+  
+  /* Style for the input field */
+  .mobile-input {
+    width: 100%;                          /* Full width input */
+    border: none;                         /* Remove input border */
+    font-size: 1rem;                      /* Font size for input text */
+    outline: none;                        /* Remove input outline on focus */
+  }
+  
+  /* Style for the Next button */
+  .next-button {
+    background-color: #66bb6a;            /* Green background */
+    color: white;                         /* White text color */
+    padding: 12px 25px;                   /* Padding for button */
+    border: none;                         /* Remove default border */
+    border-radius: 5px;                   /* Rounded corners */
+    cursor: pointer;                      /* Pointer cursor */
+    font-size: 1.1rem;                    /* Slightly larger text */
+    margin-top: 10px;                     /* Space above button */
+    width: 100%;                          /* Full width */
+  
+    &:hover {
+      background-color: #529556;
+    }
+  }
+  
+  /* Support message styles */
+  .support-message {
+    margin-top: 20px;                     /* Space above the support message */
+    font-size: 0.9rem;                    /* Support message font size */
+    color: #555;                          /* Slightly gray color */
+    text-align: center;                   /* Centered text */
+  }
+  
+  /* Phone number style */
+  .phone-number {
+    color: #66bb6a;                       /* Green color for phone number */
+    text-decoration: none;                /* Remove underline */
+  }
+  
+  .phone-number:hover {
+    text-decoration: underline;           /* Underline on hover */
+  }
+  
+  .input-group {
+  margin-bottom: 15px;
+  }
+  
+  .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  }
+  
+  .mobile-input-container {
+  display: flex;
+  align-items: center;
+  }
+  
+  .country-code {
+  margin-right: 5px;
+  }
+  
+  .user-input, .mobile-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  .next-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .next-button:hover {
+  background-color: #45a049;
+  }
+  
+  .user-details-form {
+    display: flex;                        /* Enable flexbox */
+    flex-direction: column;              /* Stack form groups vertically */
+  }
+  
+  .carddet {
+    background-color: #fff;               /* White background for the card */
+    border: 1px solid #ccc;               /* Light gray border */
+    border-radius: 10px;                  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(102, 187, 106, 0.5); /* Green shadow effect */
+    padding: 30px;                        /* Increase padding inside the card */
+    width: 400px;                         /* Card width */
+    margin: 20px auto;                    /* Center the card horizontally */
+    text-align: left;   
+    color: #333;                  /* Align text to the left */
+  }
+  
+  .form-group {
+    display: flex;                        /* Flex layout for input and label */
+    flex-direction: row;                 /* Arrange label and input in a row */
+    align-items: center;                 /* Center items vertically */
+    margin-bottom: 15px;    
+    justify-content: flex-start;             /* Space between groups */
+  }
+  
+  .form-group label {
+    font-weight: bold;                   /* Bold label */
+    margin-right: 10px;                  /* Space between label and input */
+    width: 150px;                        /* Fixed width for labels */
+  }
+  
+  /* Input Field Styles */
+  .form-group input {
+    width: 100%;                          /* Full width for input */
+    height: 40px;                        /* Same height for all inputs */
+    padding: 10px;                       /* Padding inside the input */
+    border: 1px solid #ccc;              /* Light gray border */
+    border-radius: 4px;                  /* Rounded corners */
+    box-sizing: border-box;               /* Include padding and border in width */
+    placeholder {                         /* Style for placeholder */
+        color: #888;                      /* Light gray placeholder text */
+    }
+  }
+  
+  .next-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  } 
+  
+  
+  .otp-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds space between the input boxes */
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .help-text {
+    margin-top: 15px;
+    font-size: 0.9em; /* Slightly smaller font */
+    color: #555; /* Darker gray for the text */
+  }
+  
+  .phone-link {
+    color: #007BFF; /* Same color as your links */
+    text-decoration: none; /* No underline */
+  }
+  
+  .phone-link:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+  }
+  
+}
+
+
+
+@media (max-width: 1024px) {
   .help-text {
     margin-top: 15px;
     font-size: 0.9em; /* Slightly smaller font */
@@ -1126,7 +1126,7 @@ cursor: not-allowed;
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1440px) {
   .help-text {
     margin-top: 15px;
     font-size: 0.9em; /* Slightly smaller font */

@@ -65,8 +65,74 @@
     padding: 5px;
   }
 
+  @media (max-width : 767px){
+    /* Footer.css */
 
-  @media (max-width : 1440px){
+.footer {
+    position: relative;               /* Make the footer position relative for absolute children */
+    height: 300px;                   /* Set height for footer */
+    color: white;                    /* White text color */
+    padding: 70px;                   /* Padding for the footer */
+    overflow: hidden;                /* Hide overflow to avoid extra space */
+}
+
+.footer-content {
+    display: flex;                   /* Flexbox for layout */
+    height: 100%;                   /* Full height */
+    position: relative;             /* Position relative for inner content */
+    z-index: 1;                     /* Place content above the background */
+}
+
+.footer-column {
+    flex: 1;                         /* Each column takes equal space */
+    padding: 10px;                  /* Padding for columns */
+}
+
+.footer h2 {
+    margin-bottom: 10px;             /* Space below headings */
+    font-size: 1.5rem;               /* Font size for headings */
+}
+
+.footer p {
+    margin: 5px 0;                  /* Space between paragraphs */
+    color: white;                   /* White text for paragraphs */
+}
+
+/* Optional styles for links */
+.footer a {
+    color: white;                    /* White text for links */
+    text-decoration: none;           /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline;      /* Underline links on hover */
+}
+
+.rates{
+    cursor: pointer;
+}
+.playstore-image{
+    cursor: pointer;
+    height: 25%;
+}
+
+.logo-image {
+    width: 50px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px; /* Space between logo and the text */
+  }
+  
+  .scrapuncle-text {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #66bb6a;  /* Green color */
+    font-weight: bold;
+  }
+
+  .social-icon{
+    padding: 5px;
+  }
+  }
+  @media (max-width : 1023px){
     /* Footer.css */
 
 .footer {
@@ -201,8 +267,7 @@
     padding: 5px;
   }
   }
-
-  @media (max-width : 1023px){
+  @media (max-width : 1440px){
     /* Footer.css */
 
 .footer {
@@ -270,70 +335,4 @@
   }
   }
 
-  @media (max-width : 767px){
-    /* Footer.css */
 
-.footer {
-    position: relative;               /* Make the footer position relative for absolute children */
-    height: 300px;                   /* Set height for footer */
-    color: white;                    /* White text color */
-    padding: 70px;                   /* Padding for the footer */
-    overflow: hidden;                /* Hide overflow to avoid extra space */
-}
-
-.footer-content {
-    display: flex;                   /* Flexbox for layout */
-    height: 100%;                   /* Full height */
-    position: relative;             /* Position relative for inner content */
-    z-index: 1;                     /* Place content above the background */
-}
-
-.footer-column {
-    flex: 1;                         /* Each column takes equal space */
-    padding: 10px;                  /* Padding for columns */
-}
-
-.footer h2 {
-    margin-bottom: 10px;             /* Space below headings */
-    font-size: 1.5rem;               /* Font size for headings */
-}
-
-.footer p {
-    margin: 5px 0;                  /* Space between paragraphs */
-    color: white;                   /* White text for paragraphs */
-}
-
-/* Optional styles for links */
-.footer a {
-    color: white;                    /* White text for links */
-    text-decoration: none;           /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline;      /* Underline links on hover */
-}
-
-.rates{
-    cursor: pointer;
-}
-.playstore-image{
-    cursor: pointer;
-    height: 25%;
-}
-
-.logo-image {
-    width: 50px; /* Adjust the size of the logo */
-    height: auto;
-    margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    color: #66bb6a;  /* Green color */
-    font-weight: bold;
-  }
-
-  .social-icon{
-    padding: 5px;
-  }
-  }
