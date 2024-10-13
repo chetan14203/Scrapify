@@ -69,7 +69,7 @@ const Home = () => {
       <div className="rightHome">
         {!isThankYouVisible && (
           <div className="card">
-            <h2>Enter Your Details</h2>
+            <h2>Schedule Pick Up</h2>
             <div className="form-group">
               <label>Name:</label>
               <input

@@ -1,91 +1,101 @@
 /* Why Us section styles */
 .whyUs {
-  background-color: #66bb6a;         /* Green background */
-  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-  text-align: center;                /* Center align text */
-  margin-top: 40px;                  /* Add some space from the section above */
+  background-color: #66bb6a; /* Green background */
+  padding: 60px 20px; /* Adjusted padding for spacing */
+  text-align: center; /* Center align text */
+  margin-top: 40px; /* Add some space from the section above */
 }
 
 .whyUs h2 {
-  font-size: 2rem;                    /* Heading font size */
-  color: white;                       /* White text color */
-  margin-bottom: 30px;                /* Space below the heading */
+  font-size: 2rem; /* Heading font size */
+  color: white; /* White text color */
+  margin-bottom: 30px; /* Space below the heading */
 }
 
 .whyUsCards {
-  display: flex;                      /* Display cards in a row */
-  justify-content: space-around;      /* Space cards evenly */
-  margin-top: 20px;                   /* Space above the cards */
-  flex-wrap: wrap;                    /* Allow cards to wrap on smaller screens */
+  display: flex; /* Display cards in a row */
+  justify-content: space-around; /* Space cards evenly */
+  margin-top: 20px; /* Space above the cards */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
 .whyUsCard {
   background-color: white;
-  -webkit-background-clip: border-box;  /* Chrome, Safari */
-  -moz-background-clip: border-box;     /* Firefox */
-  background-clip: border-box;          /* Standard property */
   color: #333;
   border-radius: 10px;
   padding: 20px;
-  width: 220px;                        /* Fixed width for larger screens */
+  width: 220px; /* Fixed width for larger screens */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 10px;                       /* Margin for spacing between cards */
+  margin: 10px; /* Margin for spacing between cards */
+  transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.whyUsCard:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
 }
 
 .whyUsCard h3 {
-  margin-bottom: 15px;                /* Space below card title */
-  font-size: 1.4rem;                  /* Font size for card title */
+  margin-bottom: 15px; /* Space below card title */
+  font-size: 1.4rem; /* Font size for card title */
 }
 
 .whyUsCard p {
-  font-size: 1rem;                    /* Font size for card description */
+  font-size: 1rem; /* Font size for card description */
 }
 
 .whyUsImage {
-  width: 50px;                        /* Set a fixed width for the image */
-  height: 50px;                       /* Set a fixed height for the image */
-  margin-right: 10px;                 /* Space between the image and the text */
+  width: 50px; /* Set a fixed width for the image */
+  height: 50px; /* Set a fixed height for the image */
+  margin-right: 10px; /* Space between the image and the text */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .whyUsCards {
-      justify-content: center;         /* Center cards on medium screens */
+    justify-content: center; /* Center cards on medium screens */
   }
 
   .whyUsCard {
-      width: calc(45% - 20px);        /* Adjust width for medium screens */
+    width: calc(45% - 20px); /* Adjust width for medium screens */
+  }
+
+  .whyUs {
+    margin-right: 20px; /* Add margin to avoid overlap with user details */
   }
 }
 
 @media (max-width: 768px) {
   .whyUs h2 {
-      font-size: 1.8rem;              /* Smaller heading font size */
+    font-size: 1.8rem; /* Smaller heading font size */
   }
 
   .whyUsCard {
-      width: calc(70% - 20px);        /* Adjust width for smaller screens */
+    width: calc(70% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .whyUs {
+    margin-right: 15px; /* Further adjustment to avoid overlap */
   }
 }
 
 @media (max-width: 576px) {
   .whyUs h2 {
-      font-size: 1.6rem;              /* Smaller heading font size for mobile */
+    font-size: 1.6rem; /* Smaller heading font size for mobile */
   }
 
   .whyUsCards {
-      flex-direction: column;         /* Stack cards vertically on small screens */
-      align-items: center;            /* Center cards */
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center cards */
   }
 
   .whyUsCard {
-      width: 100%;                    /* Full width on mobile */
-      margin: 10px 0;                 /* Margin for spacing between stacked cards */
+    width: 90%; /* Full width on mobile */
+    margin: 10px 0; /* Margin for spacing between stacked cards */
   }
 
   .whyUsImage {
-      width: 40px;                    /* Smaller image size on mobile */
-      height: 40px;                   /* Smaller image size on mobile */
+    width: 40px; /* Smaller image size on mobile */
+    height: 40px; /* Smaller image size on mobile */
   }
 }
