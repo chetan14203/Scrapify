@@ -1,232 +1,86 @@
 /* How It Works section styles */
 .howItWorks {
-    margin-top: 50px;                      /* Space above the section */
-    text-align: center;                    /* Center the heading and cards */
-  }
-  
+  margin-top: 50px;                      /* Space above the section */
+  text-align: center;                    /* Center the heading and cards */
+}
+
+.howItWorks h2 {
+  font-size: 2rem;                       /* Heading font size */
+  color: white;                          /* Heading color */
+  margin-bottom: 30px;                   /* Space below the heading */
+}
+
+.cards1 {
+  display: flex;                         /* Display cards in a row */
+  justify-content: space-around;         /* Space cards evenly */
+  margin-top: 20px;                      /* Space above the cards */
+  flex-wrap: wrap;                       /* Allow cards to wrap on smaller screens */
+}
+
+.card2 {
+  background-color: #66bb6a;             /* Green background for the card */
+  color: white;                          /* White text color */
+  border-radius: 10px;                   /* Rounded corners */
+  padding: 20px;                         /* Padding inside the card */
+  width: 250px;                          /* Card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
+  text-align: center;                    /* Center text in the card */
+  margin: 10px;                          /* Margin for spacing around cards */
+}
+
+.card2 h3 {
+  margin: 15px 0;                        /* Space around card title */
+  font-size: 1.4rem;                     /* Font size for card title */
+}
+
+.card2 p {
+  font-size: 1rem;                       /* Font size for card description */
+}
+
+/* Style for the card images */
+.card2-image {
+  width: 80%;                            /* Set image width */
+  height: auto;                          /* Maintain aspect ratio */
+  margin-bottom: 15px;                   /* Space below the image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
   .howItWorks h2 {
-    font-size: 2rem;                       /* Heading font size */
-    color: white;                           /* Heading color */
-    margin-bottom: 30px;                   /* Space below the heading */
+      font-size: 1.8rem;                /* Smaller heading font size */
   }
-  
-  .cards1 {
-    display: flex;                         /* Display cards in a row */
-    justify-content: space-around;         /* Space cards evenly */
-    margin-top: 20px;                      /* Space above the cards */
-  }
-  
+
   .card2 {
-    background-color: #66bb6a;             /* Green background for the card */
-    color: white;                          /* White text color */
-    border-radius: 10px;                   /* Rounded corners */
-    padding: 20px;                         /* Padding inside the card */
-    width: 250px;                          /* Card width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
-    text-align: center;                    /* Center text in the card */
+      width: calc(45% - 20px);          /* Adjust width for medium screens */
   }
-  
-  .card2 h3 {
-    margin: 15px 0;                        /* Space around card title */
-    font-size: 1.4rem;                     /* Font size for card title */
+}
+
+@media (max-width: 768px) {
+  .howItWorks h2 {
+      font-size: 1.6rem;                /* Smaller heading font size for smaller screens */
   }
-  
-  .card2 p {
-    font-size: 1rem;                       /* Font size for card description */
+
+  .card2 {
+      width: calc(70% - 20px);          /* Adjust width for smaller screens */
   }
-  
-  /* Style for the card images */
+}
+
+@media (max-width: 576px) {
+  .howItWorks h2 {
+      font-size: 1.4rem;                /* Smaller heading font size for mobile */
+  }
+
+  .cards1 {
+      flex-direction: column;           /* Stack cards vertically on small screens */
+      align-items: center;              /* Center cards */
+  }
+
+  .card2 {
+      width: 100%;                      /* Full width on mobile */
+      margin: 10px 0;                  /* Margin for spacing between stacked cards */
+  }
+
   .card2-image {
-    width: 80%;                            /* Set image width */
-    height: auto;                         /* Maintain aspect ratio */
-    margin-bottom: 15px;                   /* Space below the image */
+      width: 60%;                      /* Smaller image size on mobile */
   }
-  
-
-@media(max-width : 1440px){
-  /* How It Works section styles */
-.howItWorks {
-  margin-top: 50px;                      /* Space above the section */
-  text-align: center;                    /* Center the heading and cards */
-}
-
-.howItWorks h2 {
-  font-size: 2rem;                       /* Heading font size */
-  color: white;                           /* Heading color */
-  margin-bottom: 30px;                   /* Space below the heading */
-}
-
-.cards1 {
-  display: flex;                         /* Display cards in a row */
-  justify-content: space-around;         /* Space cards evenly */
-  margin-top: 20px;                      /* Space above the cards */
-}
-
-.card2 {
-  background-color: #66bb6a;             /* Green background for the card */
-  color: white;                          /* White text color */
-  border-radius: 10px;                   /* Rounded corners */
-  padding: 20px;                         /* Padding inside the card */
-  width: 250px;                          /* Card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
-  text-align: center;                    /* Center text in the card */
-}
-
-.card2 h3 {
-  margin: 15px 0;                        /* Space around card title */
-  font-size: 1.4rem;                     /* Font size for card title */
-}
-
-.card2 p {
-  font-size: 1rem;                       /* Font size for card description */
-}
-
-/* Style for the card images */
-.card2-image {
-  width: 80%;                            /* Set image width */
-  height: auto;                         /* Maintain aspect ratio */
-  margin-bottom: 15px;                   /* Space below the image */
-}
-
-}
-
-@media(max-width : 1024px){
-  /* How It Works section styles */
-.howItWorks {
-  margin-top: 50px;                      /* Space above the section */
-  text-align: center;                    /* Center the heading and cards */
-}
-
-.howItWorks h2 {
-  font-size: 2rem;                       /* Heading font size */
-  color: white;                           /* Heading color */
-  margin-bottom: 30px;                   /* Space below the heading */
-}
-
-.cards1 {
-  display: flex;                         /* Display cards in a row */
-  justify-content: space-around;         /* Space cards evenly */
-  margin-top: 20px;                      /* Space above the cards */
-}
-
-.card2 {
-  background-color: #66bb6a;             /* Green background for the card */
-  color: white;                          /* White text color */
-  border-radius: 10px;                   /* Rounded corners */
-  padding: 20px;                         /* Padding inside the card */
-  width: 250px;                          /* Card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
-  text-align: center;                    /* Center text in the card */
-}
-
-.card2 h3 {
-  margin: 15px 0;                        /* Space around card title */
-  font-size: 1.4rem;                     /* Font size for card title */
-}
-
-.card2 p {
-  font-size: 1rem;                       /* Font size for card description */
-}
-
-/* Style for the card images */
-.card2-image {
-  width: 80%;                            /* Set image width */
-  height: auto;                         /* Maintain aspect ratio */
-  margin-bottom: 15px;                   /* Space below the image */
-}
-
-}
-
-@media(max-width : 1023px){
-  /* How It Works section styles */
-.howItWorks {
-  margin-top: 50px;                      /* Space above the section */
-  text-align: center;                    /* Center the heading and cards */
-}
-
-.howItWorks h2 {
-  font-size: 2rem;                       /* Heading font size */
-  color: white;                           /* Heading color */
-  margin-bottom: 30px;                   /* Space below the heading */
-}
-
-.cards1 {
-  display: flex;                         /* Display cards in a row */
-  justify-content: space-around;         /* Space cards evenly */
-  margin-top: 20px;                      /* Space above the cards */
-}
-
-.card2 {
-  background-color: #66bb6a;             /* Green background for the card */
-  color: white;                          /* White text color */
-  border-radius: 10px;                   /* Rounded corners */
-  padding: 20px;                         /* Padding inside the card */
-  width: 250px;                          /* Card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
-  text-align: center;                    /* Center text in the card */
-}
-
-.card2 h3 {
-  margin: 15px 0;                        /* Space around card title */
-  font-size: 1.4rem;                     /* Font size for card title */
-}
-
-.card2 p {
-  font-size: 1rem;                       /* Font size for card description */
-}
-
-/* Style for the card images */
-.card2-image {
-  width: 80%;                            /* Set image width */
-  height: auto;                         /* Maintain aspect ratio */
-  margin-bottom: 15px;                   /* Space below the image */
-}
-
-}
-
-@media(max-width : 767px){
-  /* How It Works section styles */
-.howItWorks {
-  margin-top: 50px;                      /* Space above the section */
-  text-align: center;                    /* Center the heading and cards */
-}
-
-.howItWorks h2 {
-  font-size: 2rem;                       /* Heading font size */
-  color: white;                           /* Heading color */
-  margin-bottom: 30px;                   /* Space below the heading */
-}
-
-.cards1 {
-  display: flex;                         /* Display cards in a row */
-  justify-content: space-around;         /* Space cards evenly */
-  margin-top: 20px;                      /* Space above the cards */
-}
-
-.card2 {
-  background-color: #66bb6a;             /* Green background for the card */
-  color: white;                          /* White text color */
-  border-radius: 10px;                   /* Rounded corners */
-  padding: 20px;                         /* Padding inside the card */
-  width: 250px;                          /* Card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
-  text-align: center;                    /* Center text in the card */
-}
-
-.card2 h3 {
-  margin: 15px 0;                        /* Space around card title */
-  font-size: 1.4rem;                     /* Font size for card title */
-}
-
-.card2 p {
-  font-size: 1rem;                       /* Font size for card description */
-}
-
-/* Style for the card images */
-.card2-image {
-  width: 80%;                            /* Set image width */
-  height: auto;                         /* Maintain aspect ratio */
-  margin-bottom: 15px;                   /* Space below the image */
-}
-
 }

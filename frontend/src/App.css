@@ -1,43 +1,38 @@
-.App{
+.App {
     padding: 0;
     margin: 0;
-    border: 1px solid;
-    box-sizing: border-box;
+    border: 1px solid;                  /* Keeps the border consistent */
+    box-sizing: border-box;            /* Ensures padding and border are included in the element's total width and height */
+    width: 100%;                       /* Full width to allow flexibility */
+    max-width: 1200px;                /* Max width to maintain design integrity on larger screens */
+    margin: 0 auto;                   /* Center the App component horizontally */
 }
 
-
-@media (max-width : 767px){
-    .App{
-        padding: 0;
-        margin: 0;
-        border: 1px solid;
-        box-sizing: border-box;
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .App {
+        padding: 10px;                 /* Add some padding for medium screens */
     }
 }
 
-@media (max-width : 1023px){
-    .App{
-        padding: 0;
-        margin: 0;
-        border: 1px solid;
-        box-sizing: border-box;
+@media (max-width: 992px) {
+    .App {
+        padding: 15px;                 /* Slightly more padding for smaller screens */
+        border: 1px solid #ccc;        /* Change border color for better visibility */
     }
 }
 
-@media (max-width : 1024px){
-    .App{
-        padding: 0;
-        margin: 0;
-        border: 1px solid;
-        box-sizing: border-box;
+@media (max-width: 768px) {
+    .App {
+        padding: 20px;                 /* Increase padding for mobile devices */
+        border: none;                  /* Optionally remove border on mobile */
     }
 }
 
-@media (max-width : 1440px){
-    .App{
-        padding: 0;
-        margin: 0;
-        border: 1px solid;
-        box-sizing: border-box;
+@media (max-width: 576px) {
+    .App {
+        padding: 25px;                 /* More padding for the smallest screens */
+        border: none;                  /* Optionally remove border on very small devices */
+        font-size: 0.9rem;             /* Adjust font size for readability */
     }
 }

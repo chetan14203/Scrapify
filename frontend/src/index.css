@@ -4,9 +4,10 @@
     --font-color: white;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for better element sizing */
 }
 
 html, body {
@@ -15,9 +16,46 @@ html, body {
 
 body {
     background-color: var(--color-primary);
+    font-family: Arial, sans-serif; /* Default font family */
 }
 
 div.navbar {
     background-color: var(--color-secondary);
-    border: none; outline: none;
+    border: none;
+    outline: none;
+    padding: 15px; /* Add padding for navbar */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    div.navbar {
+        padding: 10px; /* Reduce padding for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    div.navbar {
+        padding: 8px; /* Further reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Slightly smaller font size for tablets */
+    }
+    div.navbar {
+        display: flex; /* Allow flexible layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items in the navbar */
+        padding: 5px; /* Minimal padding for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.8rem; /* Further reduce font size for mobile devices */
+    }
+    div.navbar {
+        padding: 4px; /* Minimal padding for very small screens */
+    }
 }

@@ -1,5 +1,6 @@
 /* Footer.css */
 
+/* Base styles (desktop and large screens) */
 .footer {
     position: relative;               /* Make the footer position relative for absolute children */
     height: 300px;                   /* Set height for footer */
@@ -13,7 +14,7 @@
     height: 100%;                   /* Full height */
     position: relative;             /* Position relative for inner content */
     z-index: 1;   
-    justify-content: space-between;                  /* Place content above the background */
+    justify-content: space-between;  /* Place content above the background */
 }
 
 .footer-column {
@@ -31,7 +32,6 @@
     color: white;                   /* White text for paragraphs */
 }
 
-/* Optional styles for links */
 .footer a {
     color: white;                    /* White text for links */
     text-decoration: none;           /* Remove underline from links */
@@ -41,77 +41,11 @@
     text-decoration: underline;      /* Underline links on hover */
 }
 
-.rates{
+.rates {
     cursor: pointer;
 }
-.playstore-image{
-    cursor: pointer;
-    height: 25%;
-}
 
-.logo-image {
-    width: 50px; /* Adjust the size of the logo */
-    height: auto;
-    margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    color: #66bb6a;  /* Green color */
-    font-weight: bold;
-  }
-
-  .social-icon{
-    padding: 5px;
-  }
-
-  @media (max-width : 767px){
-    /* Footer.css */
-
-.footer {
-    position: relative;               /* Make the footer position relative for absolute children */
-    height: 300px;                   /* Set height for footer */
-    color: white;                    /* White text color */
-    padding: 70px;                   /* Padding for the footer */
-    overflow: hidden;                /* Hide overflow to avoid extra space */
-}
-
-.footer-content {
-    display: flex;                   /* Flexbox for layout */
-    height: 100%;                   /* Full height */
-    position: relative;             /* Position relative for inner content */
-    z-index: 1;                     /* Place content above the background */
-}
-
-.footer-column {
-    flex: 1;                         /* Each column takes equal space */
-    padding: 10px;                  /* Padding for columns */
-}
-
-.footer h2 {
-    margin-bottom: 10px;             /* Space below headings */
-    font-size: 1.5rem;               /* Font size for headings */
-}
-
-.footer p {
-    margin: 5px 0;                  /* Space between paragraphs */
-    color: white;                   /* White text for paragraphs */
-}
-
-/* Optional styles for links */
-.footer a {
-    color: white;                    /* White text for links */
-    text-decoration: none;           /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline;      /* Underline links on hover */
-}
-
-.rates{
-    cursor: pointer;
-}
-.playstore-image{
+.playstore-image {
     cursor: pointer;
     height: 25%;
 }
@@ -120,219 +54,96 @@
     width: 50px; /* Adjust the size of the logo */
     height: auto;
     margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
+}
+
+.scrapuncle-text {
     font-size: 2rem; /* Adjust font size as needed */
     color: #66bb6a;  /* Green color */
     font-weight: bold;
-  }
+}
 
-  .social-icon{
+.social-icon {
     padding: 5px;
-  }
-  }
-  @media (max-width : 1023px){
-    /* Footer.css */
-
-.footer {
-    position: relative;               /* Make the footer position relative for absolute children */
-    height: 300px;                   /* Set height for footer */
-    color: white;                    /* White text color */
-    padding: 70px;                   /* Padding for the footer */
-    overflow: hidden;                /* Hide overflow to avoid extra space */
 }
 
-.footer-content {
-    display: flex;                   /* Flexbox for layout */
-    height: 100%;                   /* Full height */
-    position: relative;             /* Position relative for inner content */
-    z-index: 1;                     /* Place content above the background */
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .footer {
+        padding: 40px;              /* Reduce padding for mobile */
+        height: auto;               /* Allow height to adjust automatically */
+    }
+
+    .footer-content {
+        flex-direction: column;     /* Stack the columns vertically */
+        align-items: center;        /* Center the content horizontally */
+    }
+
+    .footer-column {
+        flex: none;                 /* Columns no longer take equal space */
+        width: 100%;                /* Each column takes full width */
+        padding: 20px 0;            /* Add padding between columns */
+    }
+
+    .scrapuncle-text {
+        font-size: 1.5rem;          /* Reduce the font size for mobile */
+    }
+
+    .logo-image {
+        width: 40px;                /* Adjust logo size for mobile */
+    }
 }
 
-.footer-column {
-    flex: 1;                         /* Each column takes equal space */
-    padding: 10px;                  /* Padding for columns */
+/* Tablet (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .footer {
+        padding: 50px;              /* Adjust padding for tablets */
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;     /* Stack columns vertically on tablets */
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: none;
+        width: 100%;                /* Full width for columns */
+        padding: 20px 0;            /* Add padding between columns */
+    }
+
+    .scrapuncle-text {
+        font-size: 1.8rem;          /* Adjust font size for tablets */
+    }
+
+    .logo-image {
+        width: 45px;                /* Adjust logo size for tablets */
+    }
 }
 
-.footer h2 {
-    margin-bottom: 10px;             /* Space below headings */
-    font-size: 1.5rem;               /* Font size for headings */
+/* Large screens (1024px and above) */
+@media (min-width: 1025px) {
+    .footer {
+        padding: 70px;              /* Larger padding for bigger screens */
+        height: 300px;
+    }
+
+    .footer-content {
+        flex-direction: row;        /* Keep columns side by side on large screens */
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        flex: 1;                    /* Equal space for columns */
+        padding: 10px;
+    }
+
+    .scrapuncle-text {
+        font-size: 2rem;            /* Larger font size for bigger screens */
+    }
+
+    .logo-image {
+        width: 50px;                /* Larger logo for bigger screens */
+    }
 }
-
-.footer p {
-    margin: 5px 0;                  /* Space between paragraphs */
-    color: white;                   /* White text for paragraphs */
-}
-
-/* Optional styles for links */
-.footer a {
-    color: white;                    /* White text for links */
-    text-decoration: none;           /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline;      /* Underline links on hover */
-}
-
-.rates{
-    cursor: pointer;
-}
-.playstore-image{
-    cursor: pointer;
-    height: 25%;
-}
-
-.logo-image {
-    width: 50px; /* Adjust the size of the logo */
-    height: auto;
-    margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    color: #66bb6a;  /* Green color */
-    font-weight: bold;
-  }
-
-  .social-icon{
-    padding: 5px;
-  }
-  }
-
-  @media (max-width : 1024px){
-    /* Footer.css */
-
-.footer {
-    position: relative;               /* Make the footer position relative for absolute children */
-    height: 300px;                   /* Set height for footer */
-    color: white;                    /* White text color */
-    padding: 70px;                   /* Padding for the footer */
-    overflow: hidden;                /* Hide overflow to avoid extra space */
-}
-
-.footer-content {
-    display: flex;                   /* Flexbox for layout */
-    height: 100%;                   /* Full height */
-    position: relative;             /* Position relative for inner content */
-    z-index: 1;                     /* Place content above the background */
-}
-
-.footer-column {
-    flex: 1;                         /* Each column takes equal space */
-    padding: 10px;                  /* Padding for columns */
-}
-
-.footer h2 {
-    margin-bottom: 10px;             /* Space below headings */
-    font-size: 1.5rem;               /* Font size for headings */
-}
-
-.footer p {
-    margin: 5px 0;                  /* Space between paragraphs */
-    color: white;                   /* White text for paragraphs */
-}
-
-/* Optional styles for links */
-.footer a {
-    color: white;                    /* White text for links */
-    text-decoration: none;           /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline;      /* Underline links on hover */
-}
-
-.rates{
-    cursor: pointer;
-}
-.playstore-image{
-    cursor: pointer;
-    height: 25%;
-}
-
-.logo-image {
-    width: 50px; /* Adjust the size of the logo */
-    height: auto;
-    margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    color: #66bb6a;  /* Green color */
-    font-weight: bold;
-  }
-
-  .social-icon{
-    padding: 5px;
-  }
-  }
-  @media (max-width : 1440px){
-    /* Footer.css */
-
-.footer {
-    position: relative;               /* Make the footer position relative for absolute children */
-    height: 300px;                   /* Set height for footer */
-    color: white;                    /* White text color */
-    padding: 70px;                   /* Padding for the footer */
-    overflow: hidden;                /* Hide overflow to avoid extra space */
-}
-
-.footer-content {
-    display: flex;                   /* Flexbox for layout */
-    height: 100%;                   /* Full height */
-    position: relative;             /* Position relative for inner content */
-    z-index: 1;                     /* Place content above the background */
-}
-
-.footer-column {
-    flex: 1;                         /* Each column takes equal space */
-    padding: 10px;                  /* Padding for columns */
-}
-
-.footer h2 {
-    margin-bottom: 10px;             /* Space below headings */
-    font-size: 1.5rem;               /* Font size for headings */
-}
-
-.footer p {
-    margin: 5px 0;                  /* Space between paragraphs */
-    color: white;                   /* White text for paragraphs */
-}
-
-/* Optional styles for links */
-.footer a {
-    color: white;                    /* White text for links */
-    text-decoration: none;           /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline;      /* Underline links on hover */
-}
-
-.rates{
-    cursor: pointer;
-}
-.playstore-image{
-    cursor: pointer;
-    height: 25%;
-}
-
-.logo-image {
-    width: 50px; /* Adjust the size of the logo */
-    height: auto;
-    margin-right: 15px; /* Space between logo and the text */
-  }
-  
-  .scrapuncle-text {
-    font-size: 2rem; /* Adjust font size as needed */
-    color: #66bb6a;  /* Green color */
-    font-weight: bold;
-  }
-
-  .social-icon{
-    padding: 5px;
-  }
-  }
 
 

@@ -1,252 +1,91 @@
 /* Why Us section styles */
 .whyUs {
-    background-color: #66bb6a;         /* Green background */
-    padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-    text-align: center;                /* Center align text */
-    margin-top: 40px;                  /* Add some space from the section above */
-}
-  
-  .whyUs h2 {
-    font-size: 2rem;                        /* Heading font size */
-    color: white;                           /* White text color */
-    margin-bottom: 30px;                    /* Space below the heading */
-  }
-  
-  .whyUsCards {
-    display: flex;                          /* Display cards in a row */
-    justify-content: space-around;          /* Space cards evenly */
-    margin-top: 20px;                       /* Space above the cards */
-  }
-  
-  .whyUsCard {
-    background-color: white;
-    -webkit-background-clip: border-box;  /* Chrome, Safari */
-    -moz-background-clip: border-box;     /* Firefox */
-    background-clip: border-box;          /* Standard property */
-    color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    width: 220px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: #66bb6a;         /* Green background */
+  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
+  text-align: center;                /* Center align text */
+  margin-top: 40px;                  /* Add some space from the section above */
 }
 
-  
-  .whyUsCard h3 {
-    margin-bottom: 15px;                    /* Space below card title */
-    font-size: 1.4rem;                      /* Font size for card title */
+.whyUs h2 {
+  font-size: 2rem;                    /* Heading font size */
+  color: white;                       /* White text color */
+  margin-bottom: 30px;                /* Space below the heading */
+}
+
+.whyUsCards {
+  display: flex;                      /* Display cards in a row */
+  justify-content: space-around;      /* Space cards evenly */
+  margin-top: 20px;                   /* Space above the cards */
+  flex-wrap: wrap;                    /* Allow cards to wrap on smaller screens */
+}
+
+.whyUsCard {
+  background-color: white;
+  -webkit-background-clip: border-box;  /* Chrome, Safari */
+  -moz-background-clip: border-box;     /* Firefox */
+  background-clip: border-box;          /* Standard property */
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;                        /* Fixed width for larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;                       /* Margin for spacing between cards */
+}
+
+.whyUsCard h3 {
+  margin-bottom: 15px;                /* Space below card title */
+  font-size: 1.4rem;                  /* Font size for card title */
+}
+
+.whyUsCard p {
+  font-size: 1rem;                    /* Font size for card description */
+}
+
+.whyUsImage {
+  width: 50px;                        /* Set a fixed width for the image */
+  height: 50px;                       /* Set a fixed height for the image */
+  margin-right: 10px;                 /* Space between the image and the text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .whyUsCards {
+      justify-content: center;         /* Center cards on medium screens */
   }
-  
-  .whyUsCard p {
-    font-size: 1rem;                        /* Font size for card description */
+
+  .whyUsCard {
+      width: calc(45% - 20px);        /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .whyUs h2 {
+      font-size: 1.8rem;              /* Smaller heading font size */
+  }
+
+  .whyUsCard {
+      width: calc(70% - 20px);        /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .whyUs h2 {
+      font-size: 1.6rem;              /* Smaller heading font size for mobile */
+  }
+
+  .whyUsCards {
+      flex-direction: column;         /* Stack cards vertically on small screens */
+      align-items: center;            /* Center cards */
+  }
+
+  .whyUsCard {
+      width: 100%;                    /* Full width on mobile */
+      margin: 10px 0;                 /* Margin for spacing between stacked cards */
   }
 
   .whyUsImage {
-    width: 50px;                    /* Set a fixed width for the image */
-    height: 50px;                   /* Set a fixed height for the image */
-    margin-right: 10px;             /* Space between the image and the text */
-}
-  
-
-@media (max-width : 767px){
-  /* Why Us section styles */
-.whyUs {
-  background-color: #66bb6a;         /* Green background */
-  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-  text-align: center;                /* Center align text */
-  margin-top: 40px;                  /* Add some space from the section above */
-}
-
-.whyUs h2 {
-  font-size: 2rem;                        /* Heading font size */
-  color: white;                           /* White text color */
-  margin-bottom: 30px;                    /* Space below the heading */
-}
-
-.whyUsCards {
-  display: flex;                          /* Display cards in a row */
-  justify-content: space-around;          /* Space cards evenly */
-  margin-top: 20px;                       /* Space above the cards */
-}
-
-.whyUsCard {
-  background-color: white;
-  -webkit-background-clip: border-box;  /* Chrome, Safari */
-  -moz-background-clip: border-box;     /* Firefox */
-  background-clip: border-box;          /* Standard property */
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-
-.whyUsCard h3 {
-  margin-bottom: 15px;                    /* Space below card title */
-  font-size: 1.4rem;                      /* Font size for card title */
-}
-
-.whyUsCard p {
-  font-size: 1rem;                        /* Font size for card description */
-}
-
-.whyUsImage {
-  width: 50px;                    /* Set a fixed width for the image */
-  height: 50px;                   /* Set a fixed height for the image */
-  margin-right: 10px;             /* Space between the image and the text */
-}
-}
-
-@media (max-width : 1023px){
-  /* Why Us section styles */
-.whyUs {
-  background-color: #66bb6a;         /* Green background */
-  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-  text-align: center;                /* Center align text */
-  margin-top: 40px;                  /* Add some space from the section above */
-}
-
-.whyUs h2 {
-  font-size: 2rem;                        /* Heading font size */
-  color: white;                           /* White text color */
-  margin-bottom: 30px;                    /* Space below the heading */
-}
-
-.whyUsCards {
-  display: flex;                          /* Display cards in a row */
-  justify-content: space-around;          /* Space cards evenly */
-  margin-top: 20px;                       /* Space above the cards */
-}
-
-.whyUsCard {
-  background-color: white;
-  -webkit-background-clip: border-box;  /* Chrome, Safari */
-  -moz-background-clip: border-box;     /* Firefox */
-  background-clip: border-box;          /* Standard property */
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-
-.whyUsCard h3 {
-  margin-bottom: 15px;                    /* Space below card title */
-  font-size: 1.4rem;                      /* Font size for card title */
-}
-
-.whyUsCard p {
-  font-size: 1rem;                        /* Font size for card description */
-}
-
-.whyUsImage {
-  width: 50px;                    /* Set a fixed width for the image */
-  height: 50px;                   /* Set a fixed height for the image */
-  margin-right: 10px;             /* Space between the image and the text */
-}
-}
-
-@media (max-width : 1024px){
-  /* Why Us section styles */
-.whyUs {
-  background-color: #66bb6a;         /* Green background */
-  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-  text-align: center;                /* Center align text */
-  margin-top: 40px;                  /* Add some space from the section above */
-}
-
-.whyUs h2 {
-  font-size: 2rem;                        /* Heading font size */
-  color: white;                           /* White text color */
-  margin-bottom: 30px;                    /* Space below the heading */
-}
-
-.whyUsCards {
-  display: flex;                          /* Display cards in a row */
-  justify-content: space-around;          /* Space cards evenly */
-  margin-top: 20px;                       /* Space above the cards */
-}
-
-.whyUsCard {
-  background-color: white;
-  -webkit-background-clip: border-box;  /* Chrome, Safari */
-  -moz-background-clip: border-box;     /* Firefox */
-  background-clip: border-box;          /* Standard property */
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-
-.whyUsCard h3 {
-  margin-bottom: 15px;                    /* Space below card title */
-  font-size: 1.4rem;                      /* Font size for card title */
-}
-
-.whyUsCard p {
-  font-size: 1rem;                        /* Font size for card description */
-}
-
-.whyUsImage {
-  width: 50px;                    /* Set a fixed width for the image */
-  height: 50px;                   /* Set a fixed height for the image */
-  margin-right: 10px;             /* Space between the image and the text */
-}
-}
-@media (max-width : 1440px){
-  /* Why Us section styles */
-.whyUs {
-  background-color: #66bb6a;         /* Green background */
-  padding: 60px 0;                   /* Padding around the Why Us section for spacing */
-  text-align: center;                /* Center align text */
-  margin-top: 40px;                  /* Add some space from the section above */
-}
-
-.whyUs h2 {
-  font-size: 2rem;                        /* Heading font size */
-  color: white;                           /* White text color */
-  margin-bottom: 30px;                    /* Space below the heading */
-}
-
-.whyUsCards {
-  display: flex;                          /* Display cards in a row */
-  justify-content: space-around;          /* Space cards evenly */
-  margin-top: 20px;                       /* Space above the cards */
-}
-
-.whyUsCard {
-  background-color: white;
-  -webkit-background-clip: border-box;  /* Chrome, Safari */
-  -moz-background-clip: border-box;     /* Firefox */
-  background-clip: border-box;          /* Standard property */
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-
-.whyUsCard h3 {
-  margin-bottom: 15px;                    /* Space below card title */
-  font-size: 1.4rem;                      /* Font size for card title */
-}
-
-.whyUsCard p {
-  font-size: 1rem;                        /* Font size for card description */
-}
-
-.whyUsImage {
-  width: 50px;                    /* Set a fixed width for the image */
-  height: 50px;                   /* Set a fixed height for the image */
-  margin-right: 10px;             /* Space between the image and the text */
-}
+      width: 40px;                    /* Smaller image size on mobile */
+      height: 40px;                   /* Smaller image size on mobile */
+  }
 }

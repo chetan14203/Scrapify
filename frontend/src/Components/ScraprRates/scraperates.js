@@ -55,7 +55,7 @@ const data = {
     { name: "Semi Automatic Washing Machine (Double Drum)", price: "RS 20/kg", note: "", image : Washing },
     { name: "Geyser", price: "RS 800/piece", note: "", image : geyser },
     { name: "Single Door Fridge", price: "RS 1300/piece", note: "", image : fridge },
-    { name: "Double Door Fridge", price: "", note: "", image : fridge },
+    { name: "Double Door Fridge", price: "Rs 133/piece", note: "", image : fridge },
     { name: "Iron Cooler", price: "RS 30/kg", note: "", image : cooler },
     { name: "Plastic cooler", price: "RS 15/kg", note: "", image : cooler },
   ],
