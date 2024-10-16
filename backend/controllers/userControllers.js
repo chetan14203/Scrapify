@@ -1,40 +1,52 @@
-const express = require("express");
-const User = require('../models/user');
+const connection = require('../connectDB'); 
+
 
 const createUser = async (req, res) => {
     try {
-        const { mobileNumber,name,address,pickupDate,pickupTime } = req.body; // Extract mobileNumber from request body
+        const { mobileNumber, name, address, pickupDate, pickupTime } = req.body;
 
-        // Validate the mobileNumber (ensure it's not null or empty)
         if (!mobileNumber || mobileNumber.trim() === "") {
             return res.status(400).json({ msg: "Mobile number is required." });
         }
+
         
-        const user = new User({
-            mobileNumber,name,address,pickupDate,pickupTime
+        const query = `
+            INSERT INTO User (mobileNumber, name, address, pickupDate, pickupTime)
+            VALUES (?, ?, ?, ?, ?)
+        `;
+
+        connection.query(query, [mobileNumber, name, address, pickupDate, pickupTime], (err, results) => {
+            if (err) {
+                console.error("Error saving user details:", err);
+                return res.status(500).json({ msg: "Internal server error. Details are not saved." });
+            }
+
+            
+            res.status(200).json({ msg: "Details are saved.", userId: results.insertId });
         });
-
-        // Save the user to the database
-        await user.save();
-
-        // Send success response
-        res.status(200).json({ msg: "Details are saved." });
     } catch (err) {
         console.error("Error saving user details:", err);
-        // Send error response
-        res.status(500).json({ msg: "Internal server error. Details are not saved." });
+        res.status(500).json({ msg: "Internal server error." });
     }
 };
 
 
-const userget = async (req,res) => {
+const userget = async (req, res) => {
     try {
-        res.status(201).json("Hello");
-    }catch(err){
-        res.status(404).json(err);
-    }
-}
+       
+        const query = 'SELECT * FROM User';
+        connection.query(query, (err, results) => {
+            if (err) {
+                return res.status(500).json({ msg: "Internal server error." });
+            }
 
-// Export the createUser function
-module.exports = { createUser,userget };
+            res.status(200).json(results); 
+        });
+    } catch (err) {
+        console.error("Error fetching users:", err);
+        res.status(404).json({ msg: "Error occurred." });
+    }
+};
+
+module.exports = { createUser, userget };
 

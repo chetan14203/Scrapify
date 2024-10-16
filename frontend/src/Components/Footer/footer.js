@@ -14,18 +14,18 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-column">
           <h2>Contact Us</h2>
-          <p>+91 8595358613</p>
-          <p>team@scrapuncle.com</p>
+          <p>+91 7974576441</p>
+          <p>scrapifysolutions@gmail.com</p>
           <p>Customer Support available from 10am - 7pm</p>
           <h2>Find Us Here</h2>
           <div className="social-icons">
-            <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
+           {/* <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
               <FacebookIcon className="social-icon" />
-            </a>
-            <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
+            </a>*/}
+            <a href="https://www.instagram.com/scrapifysolutions/" target="_blank" rel="noopener noreferrer">
               <InstagramIcon className="social-icon" />
             </a>
-            <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/scrapify-solutions-a79a86332/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon className="social-icon" />
             </a>
           </div>

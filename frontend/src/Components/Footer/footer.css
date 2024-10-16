@@ -63,7 +63,9 @@
 }
 
 .social-icon {
-    padding: 5px;
+    transform: scale(1.5);
+    margin-right: 15px;
+    padding: 2px;
 }
 
 /* Mobile (up to 600px) */
