@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.css";
 import homephoto from "../../Assets/recycling-at-home-background-free-vector.jpg";
-import axios from "axios"; // For making HTTP requests
+import axios from "axios"; 
 
 const Home = () => {
   const [mobileNumber, setMobileNumber] = useState("");
@@ -10,7 +10,7 @@ const Home = () => {
   const [pickupDate, setPickupDate] = useState("");
   const [pickupTime, setPickupTime] = useState("");
   const [loading, setLoading] = useState(false);
-  const [isThankYouVisible, setIsThankYouVisible] = useState(false); // New state
+  const [isThankYouVisible, setIsThankYouVisible] = useState(false); 
 
   const handleMobileChange = (e) => {
     setMobileNumber(e.target.value);
@@ -20,8 +20,9 @@ const Home = () => {
     if (mobileNumber.length === 10 && name && address && pickupDate && pickupTime) {
       setLoading(true);
       try {
-        await handleFormSubmit(); // Save the details directly
+        await handleFormSubmit(); 
       } catch (error) {
+        console.log(error)
         alert("Error saving details. Please try again.");
       } finally {
         setLoading(false);
@@ -34,7 +35,7 @@ const Home = () => {
   const handleFormSubmit = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/save-user", {
+      await axios.post("https://backend-production-af1c.up.railway.app/api/pickup", {
         mobileNumber,
         name,
         address,
