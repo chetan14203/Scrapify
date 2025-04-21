@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-column">
           <h2>Contact Us</h2>
-          <p>+91 7974576441</p>
+          <p>+91 7804062925</p>
           <p>scrapifysolutions@gmail.com</p>
           <p>Customer Support available from 10am - 7pm</p>
           <h2>Find Us Here</h2>
