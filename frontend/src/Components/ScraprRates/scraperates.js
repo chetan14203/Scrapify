@@ -91,7 +91,7 @@ const ScrapeRates = () => {
         <ul className="listalign">
           <li>The prices may vary with fluctuation in the scrap market.</li>
           <li>
-            Prices may be different for bulk pickups. Call us at <a href="tel:+917974576441">+91-7974576441</a> to get a quote for bulk pickup.
+            Prices may be different for bulk pickups. Call us at <a href="tel:+917804062925">+91-7804062925</a> to get a quote for bulk pickup.
           </li>
         </ul>
       </div>
