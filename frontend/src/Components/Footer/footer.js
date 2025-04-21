@@ -43,7 +43,7 @@ const Footer = () => {
           <img src={logoImage} alt="Scrap Uncle Logo" className="logo-image" />
           <h2 className="scrapuncle-text">Scrapify</h2>
           <p>Scrapify Solutions</p>
-          <p>Address: H. No. 355 Anna Nagar Bodha Vihar BHEL Bhopal - 462023</p>
+          <p>Address: 480, Govindpura, BHEL, Bhopal  - 462023</p>
         </div>
       </div>
     </footer>
