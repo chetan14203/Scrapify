@@ -125,7 +125,7 @@ const Home = () => {
             </button>
             <p className="help-text">
               Facing any problem? Call us{" "}
-              <a href="tel:+917974576441" className="phone-link">+917974576441</a>
+              <a href="tel:+917804062925" className="phone-link">+917804062925</a>
             </p>
           </div>
         )}
