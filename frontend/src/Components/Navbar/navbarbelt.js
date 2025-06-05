@@ -10,7 +10,7 @@ const navbarbelt = () => {
       <div className="leftNavBelt">
         <Link className="leftNavBeltLogo" to="/">
           <img src={Scrapify} alt="" className="scrapifyLogo" />
-          <span className="scrapifytext">Scrapify</span>
+          <span className="scrapifytext">ApnaKabad.com</span>
         </Link>
         <div className="mainNav">
           <Link className="home" to="/">Home</Link>
