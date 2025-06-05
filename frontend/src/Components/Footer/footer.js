@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-column">
           <h2>Contact Us</h2>
           <p>+91 7804062925</p>
-          <p>scrapifysolutions@gmail.com</p>
+          <p>rishitiwari@apnakabad.com</p>
           <p>Customer Support available from 10am - 7pm</p>
           <h2>Find Us Here</h2>
           <div className="social-icons">
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>*/}
         <div className="footer-column logo-section">
           <img src={logoImage} alt="Scrap Uncle Logo" className="logo-image" />
-          <h2 className="scrapuncle-text">Scrapify</h2>
+          <h2 className="scrapuncle-text">ApnaKabad.com</h2>
           <p>Scrapify Solutions</p>
           <p>Address: 480, Govindpura, BHEL, Bhopal  - 462023</p>
         </div>
